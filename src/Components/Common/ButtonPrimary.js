@@ -1,7 +1,7 @@
 import React from 'react';
 import {TouchableOpacity, Text, StyleSheet} from 'react-native';
-import {Fonts, colors, Images} from '../../theme';
-import fonts from '../../theme/fonts';
+import {Fonts, colors, Images} from '../../Theme';
+import fonts from '../../Theme/fonts';
 
 const ButtonPrimary = ({type = 'filled', ...props}) => {
   return (

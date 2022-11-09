@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "136663545509",
+    "project_id": "session-rn",
+    "storage_bucket": "session-rn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136663545509:android:b8cafae5037f5f2132bf4c",
+        "android_client_info": {
+          "package_name": "com.abrushempire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136663545509-9ofbh6hgad8609dfpjub2tab7d8r3m6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXA7cp7mh2_GA0j3wOLqe2qvqPFLt9Ddg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136663545509-9ofbh6hgad8609dfpjub2tab7d8r3m6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,7 @@
 import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 import React from 'react';
-import Images from '../../theme/Images';
-import {colors, Fonts} from '../../theme';
+import Images from '../../Theme/Images';
+import {colors, Fonts} from '../../Theme';
 import {Actions} from 'react-native-router-flux';
 
 function HeaderBackOnly(props) {

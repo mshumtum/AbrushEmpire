@@ -9,7 +9,7 @@ import {
   } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import { Actions } from 'react-native-router-flux';
-import { colors } from '../../theme';
+import { colors } from '../../Theme';
 
 function ImageView({item, addItem, removeItem, ...props}) {
   return (

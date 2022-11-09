@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
-import {Fonts, colors} from '../../theme';
+import {Fonts, colors} from '../../Theme';
 import {GenderButton} from './GenderButton';
 import {ButtonPrimary} from './index';
 

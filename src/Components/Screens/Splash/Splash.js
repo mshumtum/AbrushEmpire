@@ -1,13 +1,12 @@
 /* eslint-disable handle-callback-err */
 import React, {useEffect, useState} from 'react';
 import styles from './SplashStyle';
-import {Wrap} from '../../common';
+import {Wrap} from '../../Common';
 import {Text, View, Image} from 'react-native';
-import {Images} from '../../../theme';
-import {Actions} from 'react-native-router-flux';
 import Singleton from '../../../Singleton';
 import {ACCESS_TOKEN} from '../../../Constants';
 import { useDispatch } from 'react-redux';
+import { DUMMY_USER_URL } from '../../../Network/EndPoints';
 const Splash = () => {
   const dispatch = useDispatch()
   useEffect(function () {
@@ -15,12 +14,13 @@ const Splash = () => {
       Singleton.getInstance()
         .getData(ACCESS_TOKEN)
         .then(res => {
-          if (res!= null) {
-            Singleton.getInstance().accessToken = res;
-            Actions.replace("Main")
-          } else {
-            Actions.replace('Welcome');
-          }
+          console.log("Hello===");
+          // if (res!= null) {
+          //   Singleton.getInstance().accessToken = res;
+          //   Actions.replace("Main")
+          // } else {
+            Actions.replace('Login');
+          // }
         });
     }, 2500);
 
@@ -29,7 +29,7 @@ const Splash = () => {
   return (
     <Wrap style={styles.screenStyle}>
       <View style={styles.appIcon}>
-        <Image source={Images.splash_icon} />
+        <Image source={{uri: DUMMY_USER_URL}} />
       </View>
     </Wrap>
   );

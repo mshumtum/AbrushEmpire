@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {Fonts, colors} from '../../../theme';
+import {Fonts, colors} from '../../../Themes';
 
 export default StyleSheet.create({
   screenStyle: {

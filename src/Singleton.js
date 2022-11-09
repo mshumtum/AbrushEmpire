@@ -1,10 +1,10 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import * as constants from './Constants';
-import {Alert, Platform, Share} from 'react-native';
-import {request, PERMISSIONS, openSettings} from 'react-native-permissions';
-import {showMessage} from 'react-native-flash-message';
-import {colors} from './theme';
-import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
+// import {Alert, Platform, Share} from 'react-native';
+// import {request, PERMISSIONS, openSettings} from 'react-native-permissions';
+// import {showMessage} from 'react-native-flash-message';
+// import {colors} from './Theme';
+// import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 
 export default class Singleton {
   static myInstance = null;
@@ -46,6 +46,19 @@ export default class Singleton {
       AsyncStorage.setItem(key, value)
         .then(response => {
           resolve(value);
+        })
+        .catch(error => {
+          reject(error);
+        });
+    });
+  }
+  getData(key) {
+    console.log(key);
+    return new Promise((resolve, reject) => {
+      AsyncStorage.getItem(key)
+        .then(response => {
+          console.log(response);
+          resolve(response);
         })
         .catch(error => {
           reject(error);

@@ -7,9 +7,9 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
-import {colors, Fonts, Images} from '../../theme';
+import {colors, Fonts, Images} from '../../Theme';
 import {ThemeManager} from '../../../ThemeManager';
-import fonts from '../../theme/fonts';
+import fonts from '../../Theme/fonts';
 
 const InputField = props => {
   return (

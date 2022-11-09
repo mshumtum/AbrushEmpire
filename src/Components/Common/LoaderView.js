@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { TextInput, Image, View, Text, StyleSheet, TouchableWithoutFeedback, Dimensions, ActivityIndicator } from 'react-native';
-import { Fonts } from '../../theme'
+import { Fonts } from '../../Theme'
 const LoaderView = ({ isLoading }) => {
     if (isLoading == true) {
         return (

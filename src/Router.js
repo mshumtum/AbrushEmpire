@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Scene, Router, Tabs} from 'react-native-router-flux';
 import {BackHandler} from 'react-native';
-
+import { Splash, Login } from './Components/Screens'
 const RouterComponent = ({onRouteChanged}) => {
     function handleBackButton() {
       BackHandler.exitApp();
@@ -25,6 +25,14 @@ const RouterComponent = ({onRouteChanged}) => {
             component={Splash}
             gestureEnable={false}
             panHandlers={null}
+          />
+          <Scene
+            key="Login"
+            hideNavBar={true}
+            component={Login}
+            gestureEnable={false}
+            panHandlers={null}
+            initial
           />
           </Scene>
           </Router>
